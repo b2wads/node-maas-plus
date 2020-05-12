@@ -12,7 +12,7 @@ describe('[ Acceptance ] Plus operation routes', () => {
 
     before(async () => {
       res = await request(app)
-        .post('/api/v1/operations/sum')
+        .post('/api/v1/operations/plus')
         .send({ left, right })
     })
 
