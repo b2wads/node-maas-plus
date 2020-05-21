@@ -23,7 +23,26 @@
 ```sh
 npm start
 ```
-  
+# Rotas
+
+## Adição
+
+### Request
+`POST /api/v1/operations/plus`
+```javascript
+{
+  "left": 2,
+  "right": 2
+}
+```
+
+### Response
+`200 OK`
+```javascript
+{
+  "result": 0
+}
+
 
 #  Como rodar os testes
 ```sh
@@ -45,3 +64,6 @@ npm test
 - `npm run test:integration`: Executa testes de integração
 - `npm run test:unit`: Execute testes unitários
 - `npm run worker:<worker-name>`: Inicia worker
+
+
+!!
